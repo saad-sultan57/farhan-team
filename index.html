@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Md bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!--Main Navigation-->
+    <header>
+      <!-- Sidebar -->
+      <nav id="sidebarMenu" class="collapse d-lg-block sidebar">
+        <div class="position-sticky">
+          <div class="list-group list-group-flush mx-2 mt-4 gap-2" >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action py-2"
+              data-mdb-ripple-init
+              aria-current="true"
+            >
+              <span>Profile</span>
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action py-2 active"
+              data-mdb-ripple-init
+            >
+              <span>Roaster Management</span>
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action py-2"
+              data-mdb-ripple-init
+              ><span>The Launch</span></a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action py-2"
+              data-mdb-ripple-init
+              ><span>Sanction on Regatta</span></a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action py-2"
+              data-mdb-ripple-init
+            >
+              <span>Insurance</span>
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action py-2"
+              data-mdb-ripple-init
+              ><span>Membership Tools</span></a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action py-2"
+              data-mdb-ripple-init
+              ><span>CrewLAB</span></a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action py-2"
+              data-mdb-ripple-init
+              ><span>History Results</span></a
+            >
+          </div>
+
+          <!-- Next Upcoming Regatta Card -->
+          <div class="card mx-3 mt-3 bg-nav-color">
+            <img
+              src="assets/images/cardImage.png"
+              class="card-img-top"
+              alt="Rowing"
+            />
+            <div class="card-body px-3 py-2">
+              <h6 class="text-primary fs-12">Next Upcoming Regatta</h6>
+              <span class="text-white fs-16 card-text"
+                >USRowing Southeast Masters Regional Championship</span
+              >
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <!-- Logout Button -->
+        <div
+          class="mx-3 mt-3 mb-4 d-grid position-absolute bottom-0 left-0 right-0 text-center"
+        >
+          <button class="btn-white px-4" type="button">
+            <i class="fas fa-sign-out-alt me-2"></i>Logout
+          </button>
+        </div>
+      </nav>
+      <!-- Sidebar -->
+
+      <!-- Navbar -->
+      <nav
+        id="main-navbar"
+        class="navbar navbar-expand-lg navbar-light bg-white fixed-top px-2"
+      >
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#sidebarMenu"
+            aria-controls="sidebarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <!-- Brand -->
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png"  alt="" loading="lazy" />
+          </a>
+
+          <!-- Right links -->
+          <ul
+            class="navbar-nav ms-auto d-flex align-items-center gap-3 flex-row"
+          >
+            <li class="nav-item">
+              <a href="#" class="btn-white start-org"
+                >Start and Oraganization</a
+              >
+            </li>
+
+            <!-- Avatar -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-mdb-dropdown-init
+                aria-expanded="false"
+              >
+                <img
+                  src="assets/images/profile.png"
+                  class="rounded-circle"
+                  height="40"
+                  alt=""
+                  loading="lazy"
+                />
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-end"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">My profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main style="margin-top: 58px">
+      <div class="container-lg pt-4">
+        <!-- Tabs navs -->
+        <ul class="nav nav-tabs mb-3" id="rowing-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link active"
+              id="monsters-tab"
+              data-mdb-tab-init
+              href="#monsters-content"
+              role="tab"
+              aria-controls="monsters-content"
+              aria-selected="true"
+            >
+              Monster's Inc. Rowing Club
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="toystory-tab"
+              data-mdb-tab-init
+              href="#toystory-content"
+              role="tab"
+              aria-controls="toystory-content"
+              aria-selected="false"
+            >
+              Toy Story Crew
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              class="nav-link"
+              id="pixar-tab"
+              data-mdb-tab-init
+              href="#pixar-content"
+              role="tab"
+              aria-controls="pixar-content"
+              aria-selected="false"
+            >
+              Pixar Scullers
+            </a>
+          </li>
+        </ul>
+        <!-- Tabs content -->
+        <div class="tab-content" id="rowing-tabs-content">
+          <div
+            class="tab-pane fade show active"
+            id="monsters-content"
+            role="tabpanel"
+            aria-labelledby="monsters-tab"
+          >
+            <!-- Membership Details Section -->
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="membership-header">
+                  <div class="membership-header__content">
+                    <h4 class="membership-header__title">
+                      Organization Overview
+                    </h4>
+                    <span class="membership-header__subtitle"
+                      >Member Since 2002</span
+                    >
+                  </div>
+                  <div class="membership-header__buttons">
+                    <button class="btn-light-blue rounded-pill">Upgrade</button>
+                    <button class="btn-white rounded-pill">Add-on</button>
+                  </div>
+                </div>
+                <div class="membership-details">
+                  <div class="membership-row">
+                    <h5>Membership</h5>
+                    <div>
+                      <span class="text-muted">Standard</span>
+                      <div class="text-muted">01/25/2025 to 12/31/2025</div>
+                    </div>
+                  </div>
+
+                  <div class="membership-row">
+                    <span>Organization Membership Agreement</span>
+                    <button class="btn-white px-4">View</button>
+                  </div>
+
+                  <div class="membership-row">
+                    <span>SafeSport Acknowledgement</span>
+                    <button class="btn-white px-4">View</button>
+                  </div>
+
+                  <div class="membership-row">
+                    <span>Certificate of Insurance Submission</span>
+                    <button class="btn btn-danger rounded-pill">Upload</button>
+                  </div>
+
+                  <div class="membership-row">
+                    <h6>Contacts</h6>
+                    <div class="membership-contacts">
+                      <span>Mike Wazowski</span>
+                      <span>Sully</span>
+                      <span>Randall Boggs</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                <div class="membership-header">
+                  <div class="membership-header__content">
+                    <h4 class="membership-header__title">
+                      Safeguarding Resources
+                    </h4>
+                    <span class="membership-header__subtitle"
+                      >Report a Safety Incident</span
+                    >
+                  </div>
+                  <div class="membership-header__buttons">
+                    <button class="btn-white rounded-pill">
+                      Safety Incident
+                    </button>
+                    <button class="btn-white rounded-pill">SafeSport</button>
+                  </div>
+                </div>
+                <div class="membership-details safety-resources">
+                  <div class="safety-item">
+                    <div>
+                      <span>USRowing Safety Guidelines</span>
+                      <i class="fas fa-info-circle ms-2"></i>
+                    </div>
+                    <button class="btn-white">Download</button>
+                  </div>
+
+                  <div class="safety-item">
+                    <div>
+                      <span>USRowing Safety Poster</span>
+                      <i class="fas fa-info-circle ms-2"></i>
+                    </div>
+                    <button class="btn-white">Download</button>
+                  </div>
+
+                  <div class="safety-item">
+                    <div>
+                      <span>USRowing Safety Audit Checklist</span>
+                      <i class="fas fa-info-circle ms-2"></i>
+                    </div>
+                    <button class="btn-white">Download</button>
+                  </div>
+
+                  <div class="safety-item">
+                    <div>
+                      <span>USRowing Abuse Prevention & Response Policy</span>
+                      <i class="fas fa-info-circle ms-2"></i>
+                    </div>
+                    <button class="btn-white">Download</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Grapgs Area -->
+              <div class="row">
+                <div class="col-12 mb-5">
+                  <div class="compliance-header">
+                    <div class="compliance-header__content">
+                      <h4 class="compliance-header__title">
+                        Compliance at a Glance
+                      </h4>
+                     
+                    </div>
+                    <div class="compliance-header__buttons">
+                      <button class="btn-white rounded-pill">
+                        View Rosters
+                      </button>
+                      <button class="btn-white rounded-pill">
+                        Bulk Actions
+                      </button>
+                      <button class="btn-light-blue rounded-pill">
+                        View Roles
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Graphs -->
+                <div class="row graph-section p-0 m-0">
+                  <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="graph-card">
+                      <div class="graph-header">
+                        <div class="graph-title">
+                          <h5>Athletes</h5>
+                          <i class="fas fa-info-circle"></i>
+                        </div>
+                        <button class="btn-white">View Details</button>
+                      </div>
+                      <div class="graph-container">
+                        <canvas id="athletesChart1"></canvas>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="graph-card">
+                      <div class="graph-header">
+                        <div class="graph-title">
+                          <h5>Coaches</h5>
+                          <i class="fas fa-info-circle"></i>
+                        </div>
+                        <button class="btn-white">View Details</button>
+                      </div>
+                      <div class="graph-container">
+                        <canvas id="athletesChart2"></canvas>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="graph-card">
+                      <div class="graph-header">
+                        <div class="graph-title">
+                          <h5>Other</h5>
+                          <i class="fas fa-info-circle"></i>
+                        </div>
+                        <button class="btn-white">View Details</button>
+                      </div>
+                      <div class="graph-container">
+                        <canvas id="athletesChart3"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="toystory-content"
+            role="tabpanel"
+            aria-labelledby="toystory-tab"
+          >
+            <div class="row">
+              <div class="col-12">
+                <!-- Toy Story Crew Roster Section -->
+                <div class="roster-section">
+                    <!-- Roster Header -->
+                    <div class="roster-header">
+                        <div class="d-flex align-items-center justify-content-start gap-5">
+                            <h4 class="roster-title">Roster</h4>
+                             <!-- Roster Navigation -->
+                            <div class="roster-nav">
+                                <div class="roster-tabs">
+                                    <button class="roster-tab active" data-tab="athletes">Athletes</button>
+                                    <button class="roster-tab" data-tab="coaches">Coaches</button>
+                                    <button class="roster-tab" data-tab="other">Other</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="roster-search">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </div>
+
+                   
+
+                    <!-- Roster Content -->
+                    <div class="roster-content">
+                        <!-- Athletes Tab Content -->
+                        <div class="roster-tab-content active" id="athletes-content">
+                            <!-- Roster Actions -->
+                            <div class="roster-actions">
+                                <button class="roster-action-btn active">Active</button>
+                                <button class="roster-action-btn">Archive</button>
+                                <button class="roster-action-btn">Add</button>
+                                <button class="roster-action-btn">Delete</button>
+                                <button class="roster-action-btn">Bulk Actions</button>
+                            </div>
+
+                            <!-- Roster Table -->
+                            <div class="roster-table ">
+                                <table class="table ">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>ID #</th>
+                                            <th>Membership</th>
+                                            <th>Waiver</th>
+                                            <th>Self-Attestation</th>
+                                            <th>SafeSport Training</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Woody Pride</td>
+                                            <td>1234567</td>
+                                            <td><span class="status-dot red"></span></td>
+                                            <td><span class="status-dot red"></span></td>
+                                            <td><span class="status-dot green"></span></td>
+                                            <td><span class="status-dot green"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Buzz Lightyear</td>
+                                            <td>1345678</td>
+                                            <td><span class="status-dot yellow"></span></td>
+                                            <td><span class="status-dot green"></span></td>
+                                            <td><span class="status-dot green"></span></td>
+                                            <td><span class="status-dot red"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Coaches Tab Content -->
+                        <div class="roster-tab-content" id="coaches-content">
+                            <!-- Roster Actions -->
+                            <div class="roster-actions">
+                                <button class="roster-action-btn active">Active</button>
+                                <button class="roster-action-btn">Archive</button>
+                                <button class="roster-action-btn">Add</button>
+                                <button class="roster-action-btn">Delete</button>
+                                <button class="roster-action-btn">Bulk Actions</button>
+                            </div>
+
+                            <!-- Roster Table -->
+                            <div class="roster-table">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>ID #</th>
+                                            <th>Membership</th>
+                                            <th>Waiver</th>
+                                            <th>Self-Attestation</th>
+                                            <th>SafeSport Training</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Coach Andy</td>
+                                            <td>7891234</td>
+                                            <td><span class="status-dot green"></span></td>
+                                            <td><span class="status-dot green"></span></td>
+                                            <td><span class="status-dot green"></span></td>
+                                            <td><span class="status-dot green"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Other Tab Content -->
+                        <div class="roster-tab-content" id="other-content">
+                            <!-- Roster Actions -->
+                            <div class="roster-actions">
+                                <button class="roster-action-btn active">Active</button>
+                                <button class="roster-action-btn">Archive</button>
+                                <button class="roster-action-btn">Add</button>
+                                <button class="roster-action-btn">Delete</button>
+                                <button class="roster-action-btn">Bulk Actions</button>
+                            </div>
+
+                            <!-- Roster Table -->
+                            <div class="roster-table">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>ID #</th>
+                                            <th>Membership</th>
+                                            <th>Waiver</th>
+                                            <th>Self-Attestation</th>
+                                            <th>SafeSport Training</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Staff Member</td>
+                                            <td>4567891</td>
+                                            <td><span class="status-dot yellow"></span></td>
+                                            <td><span class="status-dot green"></span></td>
+                                            <td><span class="status-dot red"></span></td>
+                                            <td><span class="status-dot green"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pixar-content"
+            role="tabpanel"
+            aria-labelledby="pixar-tab"
+          >
+            <div class="row">
+              <div class="col-12">
+                <h4>Pixar Scullers Content</h4>
+                <p>
+                  Welcome to Pixar Scullers section. Where animation meets
+                  rowing excellence!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

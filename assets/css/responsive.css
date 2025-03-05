@@ -1,0 +1,301 @@
+/* Responsive styles for Compliance Section */
+@media (max-width: 992px) {
+    .compliance-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.25rem;
+    }
+
+    .compliance-header__content {
+        width: 100%;
+    }
+
+    .compliance-header__buttons {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .compliance-header__buttons button {
+        width: 100%;
+        min-width: unset;
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    /* Roster Header Responsive Styles */
+    .roster-header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .roster-header .d-flex {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem !important;
+    }
+
+    .roster-nav {
+        width: 100%;
+    }
+
+    .roster-tabs {
+        width: 100%;
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .roster-tab {
+        flex: 1;
+        white-space: nowrap;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .roster-search {
+        width: 100%;
+    }
+
+    .roster-search input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .compliance-header__buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .compliance-header__title {
+        font-size: 1.25rem;
+    }
+
+    .compliance-header__subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Graph Section Styles */
+.graph-section {
+    margin-top: 2rem;
+}
+
+.graph-card {
+    background-color: var(--white-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    height: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.graph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.graph-title {
+    display: flex;
+    align-items: center;
+}
+
+.graph-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+/* Responsive styles for graphs */
+@media (max-width: 992px) {
+    .graph-section {
+        margin-top: 1.5rem;
+    }
+
+    .graph-card {
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .graph-header {
+        margin-bottom: 1rem;
+    }
+
+    .graph-header button {
+        padding: 6px 16px;
+        font-size: 13px;
+    }
+
+    .graph-title h5 {
+        font-size: 1rem;
+    }
+
+    .graph-container {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .graph-card {
+        padding: 1rem;
+    }
+
+    .graph-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .graph-header button {
+        width: 100%;
+    }
+
+    .graph-container {
+        height: 220px;
+    }
+
+    .roster-table {
+        margin: 0 -1rem;
+    }
+
+    .roster-table th,
+    .roster-table td {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    .roster-action-btn {
+        min-width: auto;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .graph-container {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 630px) {
+    #rowing-tabs {
+        border-radius: 10px;
+      }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .start-org {
+        display: none;
+    }
+    
+    .roster-header {
+        padding: 0.75rem;
+    }
+
+    .roster-title {
+        font-size: 1.25rem;
+    }
+
+    .roster-tab {
+        padding: 6px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 413px) {
+    .navbar-brand img {
+        width: 80px;
+    }
+  
+  
+}
+
+/* Media Queries from style.css */
+@media (min-width: 991.98px) {
+    main {
+        padding-left: 240px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        position: fixed;
+        left: -100%;
+    }
+    
+    .sidebar.show {
+        left: 0;
+    }
+
+    .membership-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .membership-header__buttons {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .membership-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .membership-row button {
+        width: 100%;
+    }
+
+    .membership-contacts {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .safety-resources .membership-header__buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .safety-item {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .safety-item button {
+        width: 100%;
+    }
+
+    .chart-section {
+        margin-top: 1.5rem;
+    }
+
+    .chart-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .chart-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .chart-header button {
+        width: 100%;
+    }
+}
+
+
+
+

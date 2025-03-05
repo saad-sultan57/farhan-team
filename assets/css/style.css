@@ -1,0 +1,498 @@
+/* Google font Arial */
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap');
+
+/* Google font Alata */
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+  }
+
+body {
+    background-color: #fbfbfb;
+  }
+
+  /* Color Variables */
+  :root {
+    --primary-color: #EBEEF4;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --bg-nav-color: #00234F;
+    --light-blue-color: #009EDD;
+  }
+
+  /* Membership Section Styles */
+  .membership-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-nav-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  .membership-header__content {
+    color: var(--white-color);
+  }
+
+  .membership-header__title {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .membership-header__subtitle {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+  }
+
+  .membership-header__buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .membership-details {
+    background-color: var(--white-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+
+  .membership-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .membership-row h5,
+  .membership-row h6 {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23.46px;
+    color: #00234F;
+    margin: 0;
+  }
+
+  .membership-contacts {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .safety-resources {
+    margin-bottom: 1.5rem;
+  }
+
+  .safety-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+
+  .membership-details span,
+  .safety-resources span {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23.46px;
+    color: #00234F;
+  }
+
+  .chart-section {
+    margin-top: 2rem;
+  }
+
+  .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .chart-container {
+    background-color: var(--white-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    height: 100%;
+  }
+
+  /* custom colors */
+  .bg-web-primary {
+    background-color: var(--primary-color) !important;
+  }
+  .bg-nav-color {
+    background-color: var(--bg-nav-color) !important;
+  }
+  
+  /* Custom class */
+  .btn-white {
+    background-color: var(--white-color) !important;
+    border: 1px solid var(--black-color) !important;
+    padding: 8px 16px !important;
+    color: var(--black-color) !important;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+  font-family: 'Alata', sans-serif;
+  line-height: 22.08px;
+
+
+  }
+
+  .btn-white:hover{
+    background-color: var(--light-blue-color) !important;
+    color: var(--white-color) !important;
+    border: 1px solid var(--light-blue-color) !important;
+
+  }
+
+  .btn-light-blue{
+    background-color: #009EDD !important;
+    color: var(--white-color) !important;
+    border: 1px solid var(--black-color) !important;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+  }
+
+  .btn-light-blue:hover{
+    background-color: var(--white-color) !important;
+    color: var(--black-color) !important;
+  }
+
+  /* custom font size */
+  .fs-11 {
+    font-size: 11px !important;
+  }
+
+  .fs-16 {
+    font-size: 14px !important;
+    line-height: 10px !important;
+  }
+
+  /* Sidebar */
+
+  #sidebarMenu {
+    background-color: var(--primary-color) !important;
+    transition: all 0.3s;
+    z-index: 1000;
+    font-family: 'Alata', sans-serif;
+  }
+  #sidebarMenu .list-group-item {
+    background-color: var(--primary-color) !important;
+    padding-left: 12px;
+    padding-right: 0px;
+    border: none;
+    font-size: 19.17px;
+    line-height: 26.46px;
+    color: #00234F;
+  }
+ 
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; 
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+    transition: all 0.3s;
+  }
+  
+  @media (max-width: 991.98px) {
+    .sidebar {
+      position: fixed;
+      left: -100%;
+    }
+    
+    .sidebar.show {
+      left: 0;
+    }
+  }
+  /* .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  } */
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+
+  .card-text {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-size: 11.98px !important;
+  line-height: 11.54px !important;
+
+  }
+
+
+  /* Navbar */
+  #main-navbar {
+    background-color: var(--primary-color) !important;
+    border-color: var(--black-color) !important;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+
+.navbar-brand img {
+  max-width: 199px;
+}
+
+
+  /* Dashboard Main Area */
+ 
+.nav-tabs {
+    border-bottom: none;
+    background-color: var(--primary-color) !important;
+    border-radius: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#rowing-tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.nav-tabs .nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-tabs .nav-link {
+    flex: 1;
+    border: none;
+    border-radius: 50px;
+    color: var(--black-color);
+    padding: 12px 30px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    border-radius: 50px !important;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    background: var(--bg-nav-color) !important;
+    color: var(--white-color) !important;
+    border: none;
+}
+
+.nav-tabs .nav-link:hover:not(.active) {
+    background-color: var(--bg-nav-color) !important;
+    color: var(--white-color) !important;
+    border: none;
+}
+
+/* Compliance Section Styles */
+.compliance-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--bg-nav-color);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.compliance-header__content {
+    color: var(--white-color);
+    padding-left: 10px;
+}
+
+.compliance-header__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    color: var(--white-color);
+}
+
+.compliance-header__subtitle {
+    font-size: 14px;
+    color: var(--white-color);
+    opacity: 0.9;
+}
+
+.compliance-header__buttons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.compliance-header__buttons button {
+    white-space: nowrap;
+    min-width: 120px;
+}
+
+.graph-title  h5{
+font-family: 'Alata', sans-serif;
+font-weight: 400;
+font-size: 24px !important;
+line-height: 33.12px;
+margin: 18px;
+letter-spacing: 0.5px;
+color: #00234F;
+}
+
+/* Toy Story Crew - Roster Section Styles */
+.roster-section {
+    background-color: var(--white-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.roster-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background-color: var(--bg-nav-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.roster-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--white-color);
+}
+
+.roster-search {
+    width: 300px;
+}
+
+.roster-search .form-control {
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+}
+
+.roster-nav {
+    background-color: #DDECF6;
+    border-radius: 50px;
+    padding: 3px;
+}
+
+.roster-tabs {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+}
+
+.roster-tab {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    background: none;
+    border-radius: 50px;
+    color: var(--black-color);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.roster-tab.active {
+    background-color: var(--light-blue-color);
+    color: var(--white-color);
+}
+
+.roster-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.roster-action-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: none;
+    font-weight: 500;
+    color: var(--black-color);
+    transition: all 0.3s ease;
+}
+
+.roster-action-btn.active {
+    border-right: 2px solid var(--bg-nav-color);
+}
+
+.roster-table {
+    overflow-x: auto;
+    width: 100%;
+    margin-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.roster-table table {
+    width: 100%;
+    min-width: 800px; /* Minimum width to ensure content is readable */
+    border-collapse: separate;
+    border-spacing: 0 0.5rem;
+}
+
+.roster-table th {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    font-weight: 600;
+    color: var(--black-color);
+    border: none;
+    white-space: nowrap;
+}
+
+.roster-table td {
+    padding: 1rem;
+    border-top: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.status-dot.red {
+    background-color: #B61E42;
+}
+
+.status-dot.yellow {
+    background-color: #F5CB60;
+}
+
+.status-dot.green {
+    background-color: #359A2C;
+}
+
+
+
