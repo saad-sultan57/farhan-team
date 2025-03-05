@@ -461,11 +461,42 @@ color: #00234F;
 
 .roster-table th {
     background-color: var(--primary-color);
-    padding: 1rem;
+    padding: 1.2rem;
     font-weight: 600;
+
     color: var(--black-color);
     border: none;
     white-space: nowrap;
+    font-size: 20px;
+    font-family: 'Alata', sans-serif;
+    position: relative;
+    color: #00234F;
+}
+
+.roster-table th:after,
+.roster-table th:before,
+.roster-table th span:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+
+.roster-table th:after {
+    bottom: 6px;
+    background-color: #B61E42;
+}
+
+.roster-table th:before {
+    bottom: 3px;
+    background-color: #F5CB60;
+}
+
+.roster-table th span:after {
+    content: '';
+    bottom: 0;
+    background-color: #359A2C;
 }
 
 .roster-table td {
@@ -492,6 +523,42 @@ color: #00234F;
 
 .status-dot.green {
     background-color: #359A2C;
+}
+
+.graph-card {
+    background-color: var(--white-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    height: 100%;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.graph-card::before,
+.graph-card::after,
+.graph-card span::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    top: 0;
+}
+
+.graph-card::before {
+    right: 6px;
+    background-color: #00234F;
+}
+
+.graph-card::after {
+    right: 3px;
+    background-color: #009EDD;
+}
+
+.graph-card span::after {
+    right: 0;
+    background-color: #B61E42;
 }
 
 
