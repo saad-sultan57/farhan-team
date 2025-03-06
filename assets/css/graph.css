@@ -1,0 +1,105 @@
+/* Graph Section Styles */
+.graph-section {
+  margin-top: 2rem;
+}
+
+.graph-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.graph-container {
+  background-color: var(--white-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  height: 100%;
+}
+
+.graph-card {
+  background-color: var(--white-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  height: 100%;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.graph-card::before,
+.graph-card::after,
+.graph-card span::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  top: 0;
+}
+
+.graph-card::before {
+  right: 6px;
+  background-color: #00234F;
+}
+
+.graph-card::after {
+  right: 3px;
+  background-color: #009EDD;
+}
+
+.graph-card span::after {
+  right: 0;
+  background-color: #B61E42;
+}
+
+.graph-title h5 {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-size: 24px !important;
+  line-height: 33.12px;
+  margin: 18px;
+  letter-spacing: 0.5px;
+  color: #00234F;
+}
+
+/* Compliance Header */
+.compliance-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--bg-nav-color);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.compliance-header__content {
+  color: var(--white-color);
+  padding-left: 10px;
+}
+
+.compliance-header__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  color: var(--white-color);
+}
+
+.compliance-header__subtitle {
+  font-size: 14px;
+  color: var(--white-color);
+  opacity: 0.9;
+}
+
+.compliance-header__buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.compliance-header__buttons button {
+  white-space: nowrap;
+  min-width: 120px;
+} 

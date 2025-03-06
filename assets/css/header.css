@@ -1,0 +1,19 @@
+/* Navbar/Header Styles */
+#main-navbar {
+  background-color: var(--primary-color) !important;
+  border-color: var(--black-color) !important;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  max-width: 199px;
+}
+
+/* Custom utility classes for header */
+.bg-web-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-nav-color {
+  background-color: var(--bg-nav-color) !important;
+} 
