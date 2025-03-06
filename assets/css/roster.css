@@ -75,7 +75,7 @@
   transition: all 0.3s ease;
 }
 
-.roster-action-btn.active {
+.roster-action-btn:not(:last-child) {
   border-right: 2px solid var(--bg-nav-color);
 }
 
