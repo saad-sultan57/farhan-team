@@ -1,0 +1,150 @@
+/* Dashboard Main Area Styles */
+.nav-tabs {
+  border-bottom: none;
+  background-color: var(--primary-color) !important;
+  border-radius: 50px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#rowing-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nav-tabs .nav-item {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-tabs .nav-link {
+  flex: 1;
+  border: none;
+  border-radius: 50px;
+  color: var(--black-color);
+  padding: 12px 30px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  border-radius: 50px !important;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 500;
+  font-family: 'Alata', sans-serif;
+  font-size: 14px !important;
+  font-weight: 700;
+}
+
+.nav-tabs .nav-link.active {
+  background: var(--bg-nav-color) !important;
+  color: var(--white-color) !important;
+  border: none;
+}
+
+.nav-tabs .nav-link:hover:not(.active) {
+  background-color: var(--bg-nav-color) !important;
+  color: var(--white-color) !important;
+  border: none;
+}
+
+/* Membership Section */
+.membership-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-nav-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.membership-header__content {
+  color: var(--white-color);
+}
+
+.membership-header__title {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.membership-header__subtitle {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.membership-header__buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.membership-details {
+  background-color: var(--white-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.membership-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.membership-row h5,
+.membership-row h6 {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23.46px;
+  color: #00234F;
+  margin: 0;
+}
+
+.membership-contacts {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Safety Resources */
+.safety-resources {
+  margin-bottom: 1.5rem;
+}
+
+.safety-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.membership-details span,
+.safety-resources span {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23.46px;
+  color: #00234F;
+}
+
+/* Custom font sizes */
+.fs-11 {
+  font-size: 11px !important;
+}
+
+.fs-16 {
+  font-size: 14px !important;
+  line-height: 10px !important;
+} 

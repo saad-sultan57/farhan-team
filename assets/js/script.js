@@ -39,18 +39,24 @@ document.addEventListener('DOMContentLoaded', function() {
                         '#DE4E34', // Orange for Approaching Non-Compliance
                     ],
                     borderWidth: 0,
-                    cutout: '70%'
+                    cutout: '60%'
                 }]
             },
             options: {
                 responsive: true,
+                maintainAspectRatio: false,
                 plugins: {
                     legend: {
                         display: false
                     },
                 },
                 layout: {
-                    padding: 20
+                    padding: {
+                        top: 10,
+                        bottom: 10,
+                        left: 20,
+                        right: 20
+                    }
                 },
                 rotation: -90 * Math.PI / 180, // Start from top
             },

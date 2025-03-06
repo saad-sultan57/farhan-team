@@ -1,0 +1,175 @@
+/* Roster Section Styles */
+.roster-section {
+  background-color: var(--white-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 15px;
+}
+
+.roster-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background-color: var(--bg-nav-color);
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.roster-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: var(--white-color);
+}
+
+.roster-search {
+  width: 300px;
+}
+
+.roster-search .form-control {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+}
+
+.roster-nav {
+  background-color: #DDECF6;
+  border-radius: 50px;
+  padding: 3px;
+}
+
+.roster-tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.roster-tab {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background: none;
+  border-radius: 50px;
+  color: var(--black-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.roster-tab.active {
+  background-color: var(--light-blue-color);
+  color: var(--white-color);
+}
+
+.roster-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.roster-action-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  font-weight: 500;
+  color: var(--black-color);
+  transition: all 0.3s ease;
+}
+
+.roster-action-btn.active {
+  border-right: 2px solid var(--bg-nav-color);
+}
+
+/* Roster Table Styles */
+.roster-table {
+  overflow-x: auto;
+  width: 100%;
+  margin-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.roster-table table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+}
+
+.roster-table th {
+  background-color: var(--primary-color);
+  padding: 1.2rem;
+  font-weight: 600;
+  color: var(--black-color);
+  border: none;
+  white-space: nowrap;
+  font-size: 20px;
+  font-family: 'Alata', sans-serif;
+  position: relative;
+  color: #00234F;
+  text-align: center;
+}
+
+.roster-table th:nth-child(1),
+.roster-table th:nth-child(2) {
+  text-align: left;
+}
+
+.roster-table th:after,
+.roster-table th:before,
+.roster-table th span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+}
+
+.roster-table th:after {
+  bottom: 6px;
+  background-color: #B61E42;
+}
+
+.roster-table th:before {
+  bottom: 3px;
+  background-color: #F5CB60;
+}
+
+.roster-table th span:after {
+  content: '';
+  bottom: 0;
+  background-color: #359A2C;
+}
+
+.roster-table td {
+  padding: 1rem;
+  border-top: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  display: table-cell;
+}
+
+.roster-table td:nth-child(1),
+.roster-table td:nth-child(2) {
+  text-align: left;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+.status-dot.red {
+  background-color: #B61E42;
+}
+
+.status-dot.yellow {
+  background-color: #F5CB60;
+}
+
+.status-dot.green {
+  background-color: #359A2C;
+} 

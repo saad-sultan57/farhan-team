@@ -1,0 +1,48 @@
+/* Custom Buttons */
+.btn-white {
+  background-color: var(--white-color) !important;
+  border: 1px solid var(--black-color) !important;
+  padding: 6px 24px !important;
+  color: var(--black-color) !important;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  font-family: 'Alata', sans-serif;
+  line-height: 22.08px;
+}
+
+.btn-white:hover {
+  background-color: var(--light-blue-color) !important;
+  color: var(--white-color) !important;
+  border: 1px solid var(--light-blue-color) !important;
+}
+
+.btn-light-blue {
+  background-color: #009EDD !important;
+  color: var(--white-color) !important;
+  border: 1px solid var(--black-color) !important;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+.btn-light-blue:hover {
+  background-color: var(--white-color) !important;
+  color: var(--black-color) !important;
+}
+
+.btn-gray {
+  background-color: #EBEEF4 !important;
+  color: var(--black-color) !important;
+  border: 1px solid var(--black-color) !important;
+  padding: 8px 18px !important;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+} 
